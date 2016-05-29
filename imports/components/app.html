@@ -1,3 +1,8 @@
-<div>
-    This is my app component !
-</div>
+<ul>
+
+  <li *ngFor="let party of parties">
+      {{ party.name }} ({{ party.location }})
+      <p>{{ party.description }}</p>
+  </li>
+
+</ul>
