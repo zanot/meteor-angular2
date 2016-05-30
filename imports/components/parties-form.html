@@ -1,0 +1,14 @@
+<form [ngFormModel]="partiesForm" #f="ngForm"
+    (submit)="addParty( f.value );"
+>
+  <label>Name</label><input ngControl="name" />
+  <br />
+
+  <label>Description</label><input ngControl="description" />
+  <br />
+
+  <label>Location</label><input ngControl="location" />
+  <br />
+
+  <button>Create a new party</button>
+</form>

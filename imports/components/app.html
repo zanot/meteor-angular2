@@ -1,7 +1,10 @@
+<parties-form></parties-form>
+
 <ul>
 
   <li *ngFor="let party of parties">
       {{ party.name }} ({{ party.location }})
+      <button (click)="deleteParty( party );">Delete</button>
       <p>{{ party.description }}</p>
   </li>
 
